@@ -1,0 +1,144 @@
+body{
+    background:#193549;
+}
+
+.user-rating{
+    position: absolute;
+    transform: translate(-10%,-40%);
+    top:10%;
+    left: 45%;
+    text-align: center;
+}
+h1{
+    margin-bottom: 20px;
+    border-bottom: 3px solid orangered;
+    color: #fff;
+}
+.fa{
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+.checked{
+    color: orange;
+}
+/*user rating ================*/
+
+.range-container{
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+.five div{
+    width: 800px;
+    height: 20px;
+    background:#fff;
+    position: relative;
+}
+.five div::after{
+    content:"";
+    z-index: 2;
+    width:500px;
+    height: 20px;
+    position: absolute;
+    background: orange;
+}
+.four div{
+    width: 800px;
+    height: 20px;
+    background:#fff;
+    position: relative;
+}
+.four div::after{
+    content:"";
+    z-index: 2;
+    width:400px;
+    height: 20px;
+    position: absolute;
+    background: green;
+}
+.three div{
+    width: 800px;
+    height: 20px;
+    background:#fff;
+    position: relative;
+}
+.three div::after{
+    content:"";
+    z-index: 2;
+    width:300px;
+    height: 20px;
+    position: absolute;
+    background: dodgerblue;
+}
+.tow div{
+    width: 800px;
+    height: 20px;
+    background:#fff;
+    position: relative;
+}
+.tow div::after{
+    content:"";
+    z-index: 2;
+    width:200px;
+    height: 20px;
+    position: absolute;
+    background: purple;
+}
+.one div{
+    width: 800px;
+    height: 20px;
+    background:#fff;
+    position: relative;
+}
+.one div::after{
+    content:"";
+    z-index: 2;
+    width:100px;
+    height: 20px;
+    position: absolute;
+    background: yellow;
+}
+
+@media screen and (max-width: 800px){
+    .five div{
+        width:500px;
+        height:20px;
+    }
+    .four div{
+        width:500px;
+        height: 20px;
+    }
+    .three div{
+        width:500px;
+        height: 20px;
+    }
+    .tow div{
+        width:500px;
+        height: 20px;
+    }
+    .one div{
+        width:500px;
+        height: 20px;
+    }
+
+    .five div::after{
+        width:400px;
+    }
+    .four div::after{
+        width:300px;
+    }
+    .three div::after{
+        width:250px;
+    }
+    .tow div::after{
+        width:150px;
+    }
+    .one div::after{
+        width:100px;
+    }
+}
